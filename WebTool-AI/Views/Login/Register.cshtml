@@ -1,0 +1,132 @@
+﻿@{
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+@{
+    ViewBag.Title = "Register";
+}
+<div class="row registerrow">
+    <div class="col-sm-12 right-login vcenter">
+        <div class="col-lg-4"><img class="register-logo" src="~/Images/logowhite-login.png" /></div>
+        <div class="col-lg-8">
+            <h1 class="login-heading">Arab Investor Awards 2017 (AIA) </h1>
+            <p class="opening-description">Registration Form</p>
+        </div>
+        
+    </div>
+    <div class="col-sm-12 register-form vcenter">
+        <label>Already Registered? <a href="@Url.Action("Login", "Login")">Login</a></label>
+        <div ng-app ng-init="checked = false">
+            <form class="form-signin" action="" method="post" name="form">
+                <h4>CHOOSE AWARD CATEGORY</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>COMPANY SCALE</h5>
+                        <input type="radio" id="r1" name="rr" />
+                        <label for="r1"><span></span>SUSTAINABLITY @*<small><i class="fa fa-info-circle"></i><a href="#" data-toggle="modal" data-target="#myModal">&nbsp; Payment Terms</a></small>*@</label>
+                        <input type="radio" id="r2" name="rr" />
+                        <label for="r2"><span></span>INNOVATION </label>
+                        <input type="radio" id="r3" name="rr" />
+                        <label for="r3"><span></span>IMPACT OF INVESTMENT </label>
+                        <input type="radio" id="r4" name="rr" />
+                        <label for="r4"><span></span>CORPORATE SOCIAL RESPONSIBLITY </label>
+                        <input type="radio" id="r5" name="rr" />
+                        <label for="r5"><span></span>GENDER EQUALITY</label>
+                        <input type="radio" id="r6" name="rr" />
+                        <label for="r6"><span></span>CORPORATE GOVERNANCE</label>
+                    </div>
+                </div>
+                <h4>COMPANY DETAILS</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="username">Name of the organization</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="password">Postal address</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="username">Website</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="password">Financial Categories</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>COMPANY SCALE</h5>
+                        <input type="radio" id="r1" name="rr" />
+                        <label for="r1"><span></span>Small/Medium Scale @*<small><i class="fa fa-info-circle"></i><a href="#" data-toggle="modal" data-target="#myModal">&nbsp; Payment Terms</a></small>*@</label>
+                        <input type="radio" id="r2" name="rr" />
+                        <label for="r2"><span></span>Large Scale @*<small><i class="fa fa-info-circle"></i><a href="#" data-toggle="modal" data-target="#myModal">&nbsp; Payment Terms</a></small>*@</label>
+                    </div>
+                </div>
+                <h4 class="paddintop40">PRIMARY CONTACT REPRESENTATIVE</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="username">Name</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="password">Email</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="username">Phone</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="password">Designation</label>
+                        <input class="form-styling" type="text" placeholder="" />
+                    </div>
+                </div>
+                <h4 class="paddintop40">CAPTCHA</h4>
+                <script src='https://www.google.com/recaptcha/api.js'></script>
+                <div class="g-recaptcha" data-sitekey="6LdxOzgUAAAAACNi7YncxEGWrVbdMYH51ayU7Owv"></div>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="checkbox" id="c1" />
+                        <label for="c1"><span></span>I have read the <a href="#">Guidelines.</a></label>
+                        <input type="checkbox" id="c2"/>
+                        <label for="c2"><span></span>I have read the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+                @*<label for="checkbox"><span class="ui"></span>Keep me signed in</label>*@
+                <div class="btn-animate">
+                    <a class="btn-signin">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="/Images/favicon.png" />Payment Terms</h4>
+            </div>
+            <div class="modal-body">
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

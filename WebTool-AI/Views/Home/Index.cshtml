@@ -1,0 +1,227 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="header">
+    <h4 class="title">Users</h4>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="fa fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Total Users</p>
+                            1000
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-check-box"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Users Completed</p>
+                            250
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-calendar"></i> Last day
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-pencil-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Users in Progress</p>
+                            423
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-timer"></i> In the last hour
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Assessors</h4>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Total Assessors</p>
+                            20
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-check"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Reviewed Answers</p>
+                            100
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-calendar"></i> Last day
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-file"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers">
+                            <p>Yet to be Reviewed</p>
+                            150
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-timer"></i> In the last hour
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Informational Charts</h4>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div id="userchart" class="ct-chart"></div>
+                <div class="footer">
+                    <h5>Weekly User Charts</h5>
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> New Users
+                        <i class="fa fa-circle text-warning"></i> Completed users
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div id="assessorchart" class="ct-chart"></div>
+                <div class="footer">
+                    <h5>Weekly Assessor Charts</h5>
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> New Assessors
+                        <i class="fa fa-circle text-warning"></i> No. of reviewed answers
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div id="chartPreferences" class="ct-chart"></div>
+                <div class="footer">
+                    <h5>Users in each Criteria</h5>
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> Criteria #1
+                        <i class="fa fa-circle text-warning"></i> Criteria #2
+                        <i class="fa fa-circle text-success"></i> Criteria #3
+                        <i class="fa fa-circle text-danger"></i> Criteria #4
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,626 @@
+﻿@{
+    Layout = "~/Views/Shared/Assessor.cshtml";
+    ViewBag.Title = "Dashboard";
+}
+
+
+<div class="row">
+    <div class="header">
+        <h4 class="title">Company Information</h4>
+    </div>
+    <div class="col-lg-12 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5><b>AWARD CATEGORY</b> : <img src="~/Images/award-category/corporate-governance.png" width="15px" /><span>  CORPORATE GOVERNANCE</span></h5>
+                    </div>
+                    <div class="col-lg-6 assessorinfo">
+                        <h4>Company Details</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>Company Name :</b></td>
+                                    <td>ABC Company</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Postal Address :</b></td>
+                                    <td>P. O. Box: 40243, RAK Free Trade Zone, Ras Al Khaimah, United Arab Emirates</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Company Website :</b></td>
+                                    <td><a href="http://msf.ae">http://msf.ae</a></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Company Category :</b></td>
+                                    <td>Banking</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Company Scale :</b></td>
+                                    <td>Large</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Primary Contact Information</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>Name :</b></td>
+                                    <td>Samantha Benny</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Email :</b></td>
+                                    <td><a href="mailto:info@arabinvestorawards.ae">info@arabinvestorawards.ae</a></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Phone :</b></td>
+                                    <td>+971 4 222 2222</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Designation :</b></td>
+                                    <td>Operational Manager</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Priority Scores</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>Attainment as measured against authorised and licensed curriculum standards</b></td>
+                                    <td><b>25%</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Attainment as measured against national and appropriate international standards</b></td>
+                                    <td><b>25%</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Knowledge, skills and understanding, especially in the key subjects</b></td>
+                                    <td><b>25%</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Trends in attainment over time</b></td>
+                                    <td><b>25%</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-6 assessorinfo">
+                        <h4>Company Brief</h4>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-12">
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">History of the organization</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label style="float:right;" class="checkbox-switch" onclick="javascript:showonlyone('nutlayer1');toggleDiv('nutlayer1');">
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input type="checkbox" class="radio tn-switch" id="00" checked="checked" />
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse1" class="panel-collapse collapse in briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                <div class="panel-heading" data-href="#collapse2">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">Mission and vision of the organization</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse2" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                <div class="panel-heading" data-href="#collapse3">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">Main services / products</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse3" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                <div class="panel-heading" data-href="#collapse4">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">The Organization’s core values related to the main service/product</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse4" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                                <div class="panel-heading" data-href="#collapse5">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">Your position in the market (local or global)</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse5" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                                <div class="panel-heading" data-href="#collapse6">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">Your main customers and stakeholders</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse6" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                                <div class="panel-heading" data-href="#collapse7">
+                                                    <h4 class="panel-title">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-8"><h5 class="briefheading">Facts and figures about the organization</h5></div>
+                                                            <div class="col-lg-4">
+                                                                <label class="checkbox-switch" onclick>
+                                                                    <!-- The onclick attribute is required by iOS -->
+                                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                                    <span class="checkbox-switch-inner">
+                                                                        <span class="checkbox-switch-on"></span>
+                                                                        <span class="checkbox-switch-off"></span>
+                                                                        <span class="checkbox-switch-handle"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                            <div id="collapse7" class="panel-collapse collapse briefbody">
+                                                <div class="panel-body">
+                                                    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Organization Strategy</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><h6>Who are the key participants?</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Strategic Goals related to your award category</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Important goals for these strategic objectives?</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Information for your strategic planning process</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Accomplishment of your strategic objectives</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Core competencies and work systems</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Organization strategy adapt to meet changes in priorities</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Who are the key participants?</h6><p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p></td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>TOTAL :</h3></td>
+                            <td><h3><b>54/100</b></h3></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Maturity</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <h4>CRITERIA #1</h4>
+                                        <div class="col-lg-12">
+                                            <h3>PART 1</h3><h6>LEVEL : <span class="text-warning">#1</span>  |  LEVEL OF EVIDENCE : <span class="text-warning">STRONG</span>  |  SCORE : <span class="text-warning">68</span></h6>
+                                            <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <h3>PART 2</h3>
+                                            <div>Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
+                                            <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
+                                        </div>
+                                    </div>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <h4>CRITERIA #2</h4>
+                                        <div class="col-lg-12">
+                                            <h3>PART 1</h3><h6>LEVEL : <span class="text-warning">#1</span>  |  LEVEL OF EVIDENCE : <span class="text-warning">STRONG</span>  |  SCORE : <span class="text-warning">68</span></h6>
+                                            <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <h3>PART 2</h3>
+                                            <div>Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
+                                            <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
+                                        </div>
+                                    </div>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            Score
+                                            <div class="slider-assessor" style="margin-top:20px;">
+                                                <div id="custom-handle" class="ui-slider-handle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                                <textarea class="expand" rows="1" placeholder="Enter Comments...."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>TOTAL :</h3></td>
+                            <td><h3><b>54/100</b></h3></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Priority Chart</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <div id="chartdiv"></div>
+
+                @*<div id="userchart" class="ct-chart"></div>
+                <div class="footer">
+                    <h5>Weekly Chart</h5>
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> Completed Answers
+                        <i class="fa fa-circle text-warning"></i> Reviewd Answers
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Maturity vs Priority Chart</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <div id="chartdiv2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Final Input</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <textarea rows="15" placeholder="Enter your input..."></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4 class="title">Final Score</h4>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+        <div class="card">
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Strategy (Out of 100)</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Maturity (Out of 100)</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Results (Out of 100)</td>
+                            <td>35%</td>
+                        </tr>
+                        <tr>
+                            <td>Linkage (Out of 100)</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td><h3>TOTAL</h3></td>
+                            <td><h3>74%</h3></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row main-submit" style="padding:10px;text-align:center;"><input type="submit" value="Submit" /></div>

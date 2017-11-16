@@ -1,0 +1,166 @@
+﻿@{
+    Layout = "~/Views/Shared/User.cshtml";
+    ViewBag.Title = "Dashboard";
+}
+<div class="header">
+    <h4 class="title">Questionnaire Status</h4>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-9 qstatus">
+                        <div id="progressbar"></div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="numbers">
+                            <p><em>Progress: <b>55%</b></em></p>
+                            7 out of 13
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated now
+                        <a href="@Url.Action("Questionnaire", "User")">Continue Answering  <i class="fa fa-pencil-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="icon-big border-gray text-center">
+                            <i class="ti-eye"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="numbers">
+                            <p>Review Status</p>
+                            <div style="font-size:12px; text-align:right">
+                                Not Completed <i class="fa fa-info-circle text-danger"></i>
+                            </div>
+                            <div style="font-size:12px; text-align:right">
+                                Completed <i class="fa fa-check-circle-o text-success"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <small><em>*Questionnaire will only be reviewed after completion</em></small>
+                    </div>
+                </div>
+                <div class="footer">
+                    <hr />
+                    <div class="stats">
+                        <i class="ti-calendar"></i> Last day
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-sm-6">
+        <div class="header">
+            <h4 class="title">Company Brief</h4>
+        </div>
+        <div class="card">
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr >
+                            <td >History of the organization</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i> </td>
+                        </tr>
+                        <tr >
+                            <td >Mission and vision of the organization</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i> </td>
+                        </tr>
+                        <tr >
+                            <td >Main services / products</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i> </td>
+                        </tr>
+                        <tr >
+                            <td >The Organization&rsquo;s core values related to the main service/product</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Your position in the market (local or global)</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Your main customers and stakeholders</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Facts and figures about the organization</td>
+                            <td><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                        <a href="@Url.Action("CompanyBrief", "User")">Edit Company Brief  <i class="fa fa-pencil-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+        <div class="header">
+            <h4 class="title">Company Strategy</h4>
+        </div>
+        <div class="card">
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr >
+                            <td >Who are the key participants?</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Strategic Goals related to your award category</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Important goals for these strategic objectives?</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Information for your strategic planning process</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Accomplishment of your strategic objectives</td>
+                            <td ><i class="fa fa-check-circle-o text-success"></i></td>
+                        </tr>
+                        <tr >
+                            <td >Core competencies and work systems</td>
+                            <td ><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Organization strategy adapt to meet changes in priorities</td>
+                            <td><i class="fa fa-pencil-square text-warning"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago &nbsp;
+                        <a href="@Url.Action("CompanyStrategy", "User")">Edit Company Strategy  <i class="fa fa-pencil-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

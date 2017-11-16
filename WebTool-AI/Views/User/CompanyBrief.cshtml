@@ -1,0 +1,283 @@
+﻿@{
+    Layout = "~/Views/Shared/User.cshtml";
+    ViewBag.Title = "Company Brief";
+}
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<div class="row">
+    <div class="col-lg-9 col-sm-12">
+
+        <div class="card">
+            <div class="content">
+                <div class="row questioncontent">
+                    <h1>COMPANY BRIEF</h1>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+
+
+                                        <div class="row">
+                                            <div class="col-lg-6">History of the organization</div>
+                                            <div class="col-lg-6">
+                                                <label style="float:right;" class="checkbox-switch" onclick="javascript:showonlyone('nutlayer1');toggleDiv('nutlayer1');">
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input type="checkbox" class="radio tn-switch" id="00" checked="checked" />
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+
+
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <div class="panel-heading" data-href="#collapse2">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">Mission and vision of the organization</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span></label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Next</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <div class="panel-heading" data-href="#collapse3">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">Main services / products</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Next</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                <div class="panel-heading" data-href="#collapse4">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">The Organization’s core values related to the main service/product</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Next</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                <div class="panel-heading" data-href="#collapse5">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">Your position in the market (local or global)</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse6">Next</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                <div class="panel-heading" data-href="#collapse6">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">Your main customers and stakeholders</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                    <div class="row" style="padding:20px;">
+                                        <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse7">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                <div class="panel-heading" data-href="#collapse7">
+                                    <h4 class="panel-title">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">Facts and figures about the organization</div>
+                                            <div class="col-lg-6">
+                                                <label class="checkbox-switch" onclick>
+                                                    <!-- The onclick attribute is required by iOS -->
+                                                    <input class="radio tsin-switch" type="checkbox" id="01">
+                                                    <span class="checkbox-switch-inner">
+                                                        <span class="checkbox-switch-on"></span>
+                                                        <span class="checkbox-switch-off"></span>
+                                                        <span class="checkbox-switch-handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <textarea rows="15" placeholder="Write Your Anwser Here...."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding:10px;text-align:center;"><input type="submit" value="Submit" /></div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+        <div id="sticky-anchor"></div>
+        <div class="card" id="sticky" style="position: fixed;">
+            <div class="content">
+                <div class="row">
+                    <div class="qstatus">
+                        <h5>BRIEF STATUS</h5>
+                        <div id="progressbar"></div>
+                        <sub><em>Progress: <b>55%</b>, 4 out of 7 answered.</em></sub>
+                        <br />
+                        <h5>REVIEW STATUS</h5>
+                        <sub><em>Questionnaire not yet completed.</em></sub>
+                        <p>&nbsp;</p>
+                        <p><button>SAVE PROGRESS</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="/Images/favicon.png" />Evidence Sample</h4>
+            </div>
+            <div class="modal-body">
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
