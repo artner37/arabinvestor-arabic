@@ -265,7 +265,7 @@
             
 
         </div>
-        <div class="row main-submit" style="padding:10px;text-align:center;"><input type="submit" value="Submit" /></div>
+        <div class="row main-submit" style="padding:10px;text-align:center;"><input data-toggle="modal" data-target="#myModal2" type="submit" value="Submit" /></div>
     </div>
     <div class="col-lg-4 col-sm-12">
         <div id="sticky-anchor"></div>
@@ -306,5 +306,26 @@
             </div>
         </div>
 
+    </div>
+</div>
+<div id="myModal2" class="modal warning-dialog fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header"  style="text-align:center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <i class="fa fa-4x fa-warning icon-danger" style="width:4em;"></i>
+                <h4 class="modal-title"><b>WARNING!</b></h4>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you have answered all the answers? If you click this button you will not be able to make anymore edits and will be considered as final submission. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Yes, I am sure</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No, I am not</button>
+            </div>
+        </div>
+        
     </div>
 </div>
