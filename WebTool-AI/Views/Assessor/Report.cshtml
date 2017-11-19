@@ -15,7 +15,7 @@
                     <div class="col-xs-12">
                         <h5><b>AWARD CATEGORY</b> : <img src="~/Images/award-category/corporate-governance.png" width="15px" /><span>  CORPORATE GOVERNANCE</span></h5>
                     </div>
-                    <div class="col-lg-6 assessorinfo">
+                    @*<div class="col-lg-6 assessorinfo">
                         <h4>Company Details</h4>
                         <table>
                             <tbody>
@@ -83,8 +83,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <div class="col-lg-6 assessorinfo">
+                    </div>*@
+                    <div class="col-lg-12 assessorinfo">
                         <h4>Company Brief</h4>
                         <div class="row">
                             <div class="col-lg-12 col-sm-12">
@@ -471,7 +471,7 @@
                                             <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
                                         </div>
                                         <div class="col-lg-12">
-                                            <h3>PART 2</h3>
+                                            <h3>PART 2</h3><h6>IMPACT SCORE : <span class="text-warning">68</span></h6><br />
                                             <div>Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
                                             <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
                                         </div>
@@ -502,7 +502,7 @@
                                             <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
                                         </div>
                                         <div class="col-lg-12">
-                                            <h3>PART 2</h3>
+                                            <h3>PART 2</h3><h6>IMPACT SCORE : <span class="text-warning">68</span></h6><br />
                                             <div>Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
                                             <h5>Evidence:  <a href="#">Evidencefile.pdf</a></h5>
                                         </div>
@@ -533,11 +533,12 @@
         </div>
     </div>
 </div>
-<div class="header">
-    <h4 class="title">Priority Chart</h4>
-</div>
+
 <div class="row">
-    <div class="col-lg-12 col-sm-12">
+    <div class="col-lg-6 col-sm-12">
+        <div class="header">
+            <h4 class="title">Priority Chart</h4>
+        </div>
         <div class="card">
             <div class="content">
                 <div id="chartdiv"></div>
@@ -554,6 +555,29 @@
                         <i class="ti-reload"></i> Updated 3 minutes ago
                     </div>
                 </div>*@
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+        <div class="header">
+            <h4 class="title">Maturity Chart</h4>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div id="chartdiv3"></div>
+
+                @*<div id="userchart" class="ct-chart"></div>
+                    <div class="footer">
+                        <h5>Weekly Chart</h5>
+                        <div class="chart-legend">
+                            <i class="fa fa-circle text-info"></i> Completed Answers
+                            <i class="fa fa-circle text-warning"></i> Reviewd Answers
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <i class="ti-reload"></i> Updated 3 minutes ago
+                        </div>
+                    </div>*@
             </div>
         </div>
     </div>

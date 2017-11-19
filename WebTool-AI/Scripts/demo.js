@@ -105,8 +105,8 @@ demo = {
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences', {
-            labels: ['62%', '18%', '6%', '14%'],
-            series: [62, 18, 6, 14]
+            labels: ['57%', '43%'],
+            series: [57, 43]
         });
 
         var userdata = {
@@ -292,8 +292,8 @@ demo = {
 
         //      pie chart
         Chartist.Pie('#chartPreferences', {
-            labels: ['62%', '32%', '6%'],
-            series: [62, 32, 6]
+            labels: ['53%', '47%'],
+            series: [53, 47]
         });
 
         //      bar chart
@@ -631,6 +631,63 @@ var chart2 = AmCharts.makeChart("chartdiv2", {
         "bullet": "square",
         "valueField": "scorem",
         "valueAxis": "v2"
+    }],
+    "categoryField": "criteria"
+});
+var chart3 = AmCharts.makeChart("chartdiv3", {
+    "type": "radar",
+    "theme": "light",
+    "dataProvider": [{
+        "criteria": "Criteria 1",
+        "score": 156.9
+    }, {
+        "criteria": "Criteria 2",
+        "score": 131.1
+    }, {
+        "criteria": "Criteria 3",
+        "score": 115.8
+    }, {
+        "criteria": "Criteria 4",
+        "score": 109.9
+    }, {
+        "criteria": "Criteria 5",
+        "score": 108.3
+    }, {
+        "criteria": "Criteria 6",
+        "score": 99
+    }],
+    "valueAxes": [{
+        "axisTitleOffset": 20,
+        "minimum": 0,
+        "axisAlpha": 0.5,
+        "axisColor": "#fff",
+        "guides": [{
+            "value": 0,
+            "toValue": 50,
+            "fillColor": "#fff",
+            "fillAlpha": 0.4
+        }, {
+            "value": 50,
+            "toValue": 100,
+            "fillColor": "#fff",
+            "fillAlpha": 0.3
+        }, {
+            "value": 100,
+            "toValue": 150,
+            "fillColor": "#fff",
+            "fillAlpha": 0.2
+        }, {
+            "value": 150,
+            "toValue": 200,
+            "fillColor": "#fff",
+            "fillAlpha": 0.1
+        }]
+    }],
+    "startDuration": 2,
+    "graphs": [{
+        "balloonText": "Score : [[value]]",
+        "bullet": "round",
+        "valueField": "score"
     }],
     "categoryField": "criteria"
 });
