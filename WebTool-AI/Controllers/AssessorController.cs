@@ -18,5 +18,10 @@ namespace WebTool_AI.Controllers
             ViewBag.Message = "Report";
             return View();
         }
+        public ActionResult Companylist()
+        {
+            ViewBag.Message = "Companyylist";
+            return View();
+        }
     }
 }

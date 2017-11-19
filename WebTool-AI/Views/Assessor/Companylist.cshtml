@@ -1,0 +1,198 @@
+﻿@{
+    Layout = "~/Views/Shared/Assessor.cshtml";
+    ViewBag.Title = "Dashboard";
+}
+
+<script>
+    $(document).ready(function () {
+        var grid = $('#myTable').DataTable({
+            "paging": false,
+            "ordering": false,
+            "info": false,
+        });
+
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
+
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
+
+        var toggleActive = function (activate) {
+            //return; // uncomment this line to see the de-coupled (broken) Bootstrap state
+
+            // de-activate any existing selection
+            $('#record-filters').find('.btn-primary').each(function (index, element) {
+                $(element).removeClass('active');
+            });
+            activate.addClass('active');
+        }
+
+        $.fn.dataTable.ext.search.push(
+            function (settings, data, dataIndex) {
+                var Completed = $('#gridDisplayCompleted')[0].checked;
+                var Progress = $('#gridDisplayProgress')[0].checked;
+                var Reviewed = $('#gridDisplayReviewed')[0].checked;
+                var all = $('#gridDisplayAll')[0].checked;
+                console.log("data[0]:" + data[0]);
+                console.log("data[1]:" + data[1]);
+                console.log("data[2]:" + data[2]);
+                console.log("Completed:" + Completed);
+                console.log("Progress:" + Progress);
+                console.log("Reviewed:" + Reviewed);
+                console.log("all:" + all);
+                var condition = String(data[2]); // check condition
+                if (all) {
+                    toggleActive($('#gridDisplayAllLabel'));
+                    console.log("all clicked");
+                    return true;
+                } else if (Completed) {
+                    toggleActive($('#gridDisplayCompleted'));
+                    console.log("Completed clicked");
+                    return ("Completed" == condition);
+                } else if (Progress) {
+                    toggleActive($('#gridDisplayProgress'));
+                    console.log("Progress clicked");
+                    return ("In Progress" == condition);
+                } else if (Reviewed) {
+                    toggleActive($('#gridDisplayReviewed'));
+                    console.log("Reviewed clicked");
+                    return ("Reviewed" == condition);
+                }
+                return false;
+            }
+        );
+    });
+
+</script>
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">User Management</h4>
+                <p class="category">Adding &amp; Editing Users</p>
+            </div>
+            <div class="content">
+                <a href="#" class="btn btn-default float_r" data-toggle="modal" data-target="#myModal">Create New Use &nbsp; <i class="fa fa-plus"></i></a>
+                <p>&nbsp;</p>
+                <div id="record-filters" class="btn-group" data-toggle="buttons" style="margin-top: 20px; margin-bottom: 20px">
+                    <label id="gridDisplayDeadLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayCompleted" autocomplete="off" value="Completed" /> Completed
+                    </label>
+                    <label id="gridDisplayAliveLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayProgress" autocomplete="off" value="In Progress" /> In Progress
+                    </label>
+                    <label id="gridDisplayAliveLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayReviewed" autocomplete="off" value="Reviewed" /> Reviewed
+                    </label>
+                    <label id="gridDisplayAllLabel" class="btn btn-primary active">
+                        <input type="radio" name="GridDisplay" id="gridDisplayAll" autocomplete="off" value="all" /> All
+                    </label>
+                </div>
+                <table class="display" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Award Category</th>
+                            <th>Status</th>
+                            <th>View Report</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Award Category</th>
+                            <th>Status</th>
+                            <th>View Report</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Corporate Governance</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Impact of Investment</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Gender Equality</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Innovation</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Sustainablity</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Corporate Social Responsiblity</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Corporate Governance</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Impact of Investment</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Gender Equality</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Innovation</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Sustainablity</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Corporate Social Responsiblity</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("Report", "Assessor")">View Report</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

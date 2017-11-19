@@ -768,6 +768,7 @@
     <Content Include="Views\Login\Register.cshtml" />
     <Content Include="Views\Assessor\Dashboard.cshtml" />
     <Content Include="Views\Assessor\Report.cshtml" />
+    <Content Include="Views\Assessor\Companylist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,7 +8,11 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     @Styles.Render("~/Content/tablecss")
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/arabinvestor")
+    @Scripts.Render("~/bundles/datatablejs")
 
 </head>
 <body>
@@ -36,7 +40,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="@Url.Action("Companylist", "Assessor")">
                                 <i class="fa fa-users"></i>
                                 <p>Company List</p>
                             </a>
