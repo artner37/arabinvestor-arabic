@@ -6,8 +6,6 @@
 <script>
     $(document).ready(function () {
         var grid = $('#myTable').DataTable({
-            "paging": false,
-            "ordering": false,
             "info": false,
         });
 
@@ -69,11 +67,10 @@
 
 </script>
 <div class="row">
-
     <div class="col-md-12">
         <div class="card">
             <div class="header">
-                <h4 class="title">User Management</h4>
+                <h3>Company List Management</h3>
                 <p class="category">Adding &amp; Editing Users</p>
             </div>
             <div class="content">
@@ -93,7 +90,7 @@
                         <input type="radio" name="GridDisplay" id="gridDisplayAll" autocomplete="off" value="all" /> All
                     </label>
                 </div>
-                <table class="display" id="myTable">
+                <table class="display table-striped table-hover" id="myTable">
                     <thead>
                         <tr>
                             <th>Company Name</th>
