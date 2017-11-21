@@ -37,10 +37,11 @@ namespace WebTool_AI
                       "~/Scripts/Datatables/dataTables.bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                      "~/Scripts/jquery-ui-1.12.1.js"));
+                      "~/Scripts/jquery-ui-1.12.1.js",
+                      "~/Scripts/jquery.ui.slider-rtl.js"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-              "~/Content/themes/base/jquery-ui.css"));
+              "~/Content/themes/base/jquery-ui.css", "~/Content/jquery.ui.slider-rtl.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
