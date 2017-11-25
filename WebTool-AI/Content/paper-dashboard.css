@@ -4101,7 +4101,7 @@ button {
     background: -o-linear-gradient(red, yellow, green) !important;
     * For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(red, yellow, green) !important; /* For Firefox 3.6 to 15 */
     background: linear-gradient(red, yellow, green) !important; /* Standard syntax */
-    height: 250px !important;
+    height: 300px !important;
     margin-left: 10px !important;
     width: 15px !important;
 }
@@ -4259,7 +4259,7 @@ textarea {
     margin-top:30px;
 }
 .indicatorp p{
-    padding-left: 10px
+    padding-left: 10px;
 }
 .indicatorp p::before{
     content:"-";
@@ -4278,4 +4278,7 @@ textarea {
 .indicatorp p:last-child {
     border-left: 2px solid green;
     padding:15px;
+}
+.explanation{
+    margin-top:20px;
 }

@@ -14,9 +14,30 @@
         </div>
     </div>
 </div>
-
+<div class="zoom">
+    <a data-toggle="modal" data-target="#myModal4" class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-2x fa-save"></i></a>
+</div>
 <div class="row">
-    <div class="col-lg-8 col-sm-12">
+    @*<div class="col-lg-4 col-sm-12">
+        <div id="sticky-anchor"></div>
+        <div class="card" id="sticky" style="position: fixed;">
+            <div class="content">
+                <div class="row">
+                    <div class="qstatus">
+                        <h5>QUESTIONNAIRE STATUS</h5>
+                        <div id="progressbar"></div>
+                        <sub><em>Progress: <b>55%</b>, 7 out of 13 answered.</em></sub>
+                        <br />
+                        <h5>REVIEW STATUS</h5>
+                        <sub><em>Questionnaire not yet completed.</em></sub>
+                        <p>&nbsp;</p>
+                        <p><button>SAVE PROGRESS</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <div class="col-lg-12 col-sm-12">
 
         <div class="card">
             <div class="content">
@@ -27,8 +48,6 @@
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-
-
                                         <div class="row">
 
                                             <div class="col-lg-12">
@@ -53,7 +72,7 @@
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -94,6 +113,8 @@
                                                     <option value="2">Good</option>
                                                     <option value="1">Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -115,7 +136,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact1" style="margin-top:30px;">
@@ -123,10 +144,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -166,7 +187,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -207,6 +228,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -229,7 +252,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -237,10 +260,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -281,7 +304,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -322,6 +345,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -344,7 +369,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -352,10 +377,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -396,7 +421,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -437,6 +462,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -459,7 +486,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -467,13 +494,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
-                                            </div>                                        </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
                                         <a class="btn next-acc" style="float:right;" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Next</a>
@@ -510,7 +538,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -551,6 +579,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -573,7 +603,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -581,10 +611,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -625,7 +655,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -666,6 +696,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -688,7 +720,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -696,10 +728,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -740,7 +772,7 @@
                                     <div class="row">
 
                                         <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 1</h4>
+                                            <h4 for="01" class="tn-headline">PART 1  <small><a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal5"><b>What does each level mean?</b></a></small></h4>
                                             <ul class="list">
                                                 <li>
                                                     <label>
@@ -781,6 +813,8 @@
                                                     <option>Good</option>
                                                     <option>Acceptable</option>
                                                 </select>
+                                                <h6 style="padding-top:30px;">Explain Why you chose this level in 250 words. (Optional)</h6>
+                                                <textarea rows="5"></textarea>
                                             </div>
                                         </div>
 
@@ -803,7 +837,7 @@
                                     </div>
                                     <div class="row textboxes" style="display:none;">
                                         <div class="col-lg-12">
-                                            <p style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</p>
+                                            <h4 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h4>
                                             <div class="row">
                                                 <div class="col-lg-1">
                                                     <div class="slider-impact" id="slider-impact2" style="margin-top:30px;">
@@ -811,10 +845,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-11 indicatorp">
-                                                    <p>There are no organizational performance results.<b>(0)</b></p>
-                                                    <p>The performance is on a meaningful measurement scale.<b>(1-33)</b></p>
-                                                    <p>There is a direction and rate of change of the performance results.<b>(34-66)</b></p>
-                                                    <p>The organization benchmark their Performance relative to that of other.<b>(67-100)</b></p>
+                                                    <p>There are no organizational performance results, or the results reported are poor.</p>
+                                                    <p>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident</p>
+                                                    <p>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</p>
+                                                    <p>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</p>
 
                                                 </div>
                                             </div>
@@ -858,25 +892,6 @@
 
         </div>
         <div class="row main-submit" style="padding:10px;text-align:center;"><input data-toggle="modal" data-target="#myModal2" type="submit" value="Submit" /></div>
-    </div>
-    <div class="col-lg-4 col-sm-12">
-        <div id="sticky-anchor"></div>
-        <div class="card" id="sticky" style="position: fixed;">
-            <div class="content">
-                <div class="row">
-                    <div class="qstatus">
-                        <h5>QUESTIONNAIRE STATUS</h5>
-                        <div id="progressbar"></div>
-                        <sub><em>Progress: <b>55%</b>, 7 out of 13 answered.</em></sub>
-                        <br />
-                        <h5>REVIEW STATUS</h5>
-                        <sub><em>Questionnaire not yet completed.</em></sub>
-                        <p>&nbsp;</p>
-                        <p><button>SAVE PROGRESS</button></p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <div id="myModal" class="modal fade" role="dialog">
@@ -963,6 +978,45 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Yes, I am sure</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">No, I am not</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="myModal4" class="modal warning-dialog fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="text-align:center;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <i class="fa fa-4x fa-check-circle-o text-success" style="width:4em;"></i>
+                <h4 class="modal-title"><b>SAVED!</b></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="myModal5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="/Images/favicon.png" />What does each level mean?</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><strong>Level 1: </strong>There are no organizational performance results, or the results reported are poor.</li>
+                    <li><strong>Level 2: </strong>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident<strong>.</strong></li>
+                    <li><strong>Level 3: </strong>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy<strong>.</strong></li>
+                    <li><strong>Level 4:</strong> The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
 
