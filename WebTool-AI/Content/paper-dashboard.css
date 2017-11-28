@@ -4101,7 +4101,7 @@ button {
     background: -o-linear-gradient(red, yellow, green) !important;
     * For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(red, yellow, green) !important; /* For Firefox 3.6 to 15 */
     background: linear-gradient(red, yellow, green) !important; /* Standard syntax */
-    height: 300px !important;
+    height: 285px !important;
     margin-left: 10px !important;
     width: 15px !important;
 }
@@ -4240,9 +4240,6 @@ textarea {
     height: 60px;
     line-height: 65px;
 }
-
-
-
 .scale-transition {
     transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
 }
@@ -4255,30 +4252,56 @@ textarea {
 .scale-transition.scale-in {
     transform: scale(1);
 }
-.indicatorp{
-    margin-top:30px;
-}
 .indicatorp p{
-    padding-left: 10px;
-}
-.indicatorp p::before{
-    content:"-";
+    padding:1.85em;
 }
 .indicatorp p:first-child {
     border-left: 2px solid red;
+    padding:0;
+    padding-left: 1.85em;
 }
 .indicatorp p:nth-child(2) {
     border-left: 2px solid #FF7900;
-    padding:15px;
 }
 .indicatorp p:nth-child(3) {
     border-left: 2px solid #FFD900;
-    padding:15px;
 }
 .indicatorp p:last-child {
     border-left: 2px solid green;
-    padding:15px;
 }
 .explanation{
     margin-top:20px;
+}
+.level-desc{
+    border:1px solid #b98b1a;
+    padding:5px;
+    margin-top:13px;
+    color:#b98b1a;
+    font-style:italic;
+}
+.result-desc {
+    border: 1px solid #b98b1a;
+    color: #b98b1a;
+    font-style: italic;
+    font-size:12px;
+}
+.hidden-text {
+    display: none;
+}
+.level-desc:hover .hidden-text, .result-desc:hover .hidden-text {
+    display: inline;
+}
+.level-desc:hover .readmore, .result-desc:hover .readmore {
+    display: none;
+}
+#barchart {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}						
+.displaychart{
+    display:block;
+}
+.hidechart {
+    display: none;
 }

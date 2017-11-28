@@ -13,34 +13,19 @@ namespace WebTool_AI.Controllers
             ViewBag.Message = "Dashboard";
             return View();
         }
-        public ActionResult ProjectManagement()
+        public ActionResult Companylist()
         {
-            ViewBag.Message = "ProjectManagement";
+            ViewBag.Message = "Company List";
             return View();
         }
-        public ActionResult FirstLevelQuestion()
+        public ActionResult CompanyReport()
         {
-            ViewBag.Message = "FirstLevelQuestion";
+            ViewBag.Message = "Company Report";
             return View();
         }
-        public ActionResult SecondLevelQuestion()
+        public ActionResult EachAssessorReport()
         {
-            ViewBag.Message = "SecondLevelQuestion";
-            return View();
-        }
-        public ActionResult ManagerUser()
-        {
-            ViewBag.Message = "ManagerUser";
-            return View();
-        }
-        public ActionResult ManageCriteria()
-        {
-            ViewBag.Message = "ManagerCriteria";
-            return View();
-        }
-        public ActionResult ReviewAnswers()
-        {
-            ViewBag.Message = "ReviewAnswers";
+            ViewBag.Message = "Each Assessor Report";
             return View();
         }
     }

@@ -25,10 +25,12 @@ namespace WebTool_AI
 
             bundles.Add(new ScriptBundle("~/bundles/arabinvestor").Include(
                       "~/Scripts/paper-dashboard.js",
-                      "~/Scripts/chartist.min.js",
                       "~/Scripts/bootstrap-notify.js",
+                      "~/Scripts/moment.js",
+                      "~/Scripts/bootstrap-datetimepicker.js",
                       "~/amcharts/amcharts.js", 
                       "~/amcharts/radar.js", 
+                      "~/amcharts/serial.js",
                       "~/amcharts/themes/black.js",
                       "~/Scripts/demo.js"));
 
@@ -45,7 +47,7 @@ namespace WebTool_AI
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/paper-dashboard.css", "~/Content/demo.css", "~/Content/animate.css", "~/Content/themify-icons.css", "~/Content/font-awesome.css"));
+                      "~/Content/paper-dashboard.css", "~/Content/bootstrap-datetimepicker.css", "~/Content/demo.css", "~/Content/animate.css", "~/Content/themify-icons.css", "~/Content/font-awesome.css"));
 
             bundles.Add(new StyleBundle("~/Content/logincss").Include(
                       "~/Content/bootstrap.css",

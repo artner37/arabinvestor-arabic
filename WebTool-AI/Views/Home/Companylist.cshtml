@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <div class="col-xs-12">
+                    <h5><b>AWARD CATEGORY</b> : <img src="~/Images/award-category/corporate-governance.png" width="15px" /><span>  CORPORATE GOVERNANCE</span></h5>
+                </div>
+            </div>
+            <div class="content">
+                <a href="#" class="btn btn-default float_r" data-toggle="modal" data-target="#myModal">Create New Use &nbsp; <i class="fa fa-plus"></i></a>
+                <p>&nbsp;</p>
+                <div id="record-filters" class="btn-group" data-toggle="buttons" style="margin-top: 20px; margin-bottom: 20px">
+                    <label id="gridDisplayDeadLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayCompleted" autocomplete="off" value="Completed" /> Completed
+                    </label>
+                    <label id="gridDisplayAliveLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayProgress" autocomplete="off" value="In Progress" /> In Progress
+                    </label>
+                    <label id="gridDisplayAliveLabel" class="btn btn-primary">
+                        <input type="radio" name="GridDisplay" id="gridDisplayReviewed" autocomplete="off" value="Reviewed" /> Reviewed
+                    </label>
+                    <label id="gridDisplayAllLabel" class="btn btn-primary active">
+                        <input type="radio" name="GridDisplay" id="gridDisplayAll" autocomplete="off" value="all" /> All
+                    </label>
+                </div>
+                <table class="display table-striped table-hover" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Status</th>
+                            <th>View Report</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Status</th>
+                            <th>View Report</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company1</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Reviewed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>In Progress</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>Completed</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,16 +6,11 @@
     <title>@ViewBag.Title - Arab Investor Award</title>
     <link rel="icon" href="~/Images/favicon.png" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    @Styles.Render("~/Content/tablecss")
+    @Styles.Render("~/Content/themes/base/css")
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/arabinvestor")
-    @Scripts.Render("~/bundles/datatablejs")
+    @Styles.Render("~/Content/tablecss")
 </head>
 <body>
-    <body>
 
         <div class="wrapper">
             <div class="sidebar" data-background-color="black" data-active-color="primary">
@@ -31,7 +26,6 @@
                             <img src="~/Images/logo.png" />
                         </a>
                     </div>
-
                     <ul class="nav">
                         <li class="">
                             <a href="@Url.Action("Index", "Home")">
@@ -40,42 +34,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="@Url.Action("ManagerUser", "Home")">
-                                <i class="ti-user"></i>
-                                <p>User Management</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("ProjectManagement", "Home")">
+                            <a href="#">
                                 <i class="ti-view-list-alt"></i>
-                                <p>Project Management</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("ManageCriteria", "Home")">
-                                <i class="ti-check"></i>
-                                <p>Criteria Management</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href=""@Url.Action("FirstLevelQuestion", "Home")">
-                                <i class="fa fa-question"></i>
-                                <p>First Level Question</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("SecondLevelQuestion", "Home")">
-                                <i class="fa fa-question"></i>
-                                <p>Second Level Question</p>
+                                <p>Final Results</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-file"></i>
-                                <p>Reports &amp; Charts</p>
+                                <i class="ti-check"></i>
+                                <p>Final Nominees</p>
                             </a>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -176,16 +145,77 @@
 
             </div>
         </div>
-
-
-    </body>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/arabinvestor")
+        @Scripts.Render("~/bundles/datatablejs")
+        @Scripts.Render("~/bundles/modernizr")
     @RenderSection("scripts", required: false)
 </body>
-<script type="text/javascript">
+<script>
+       
     $(document).ready(function () {
+        var grid = $('#myTable').DataTable({
+            "info": false,
+        });
 
-        demo.initChartist();
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
+
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
+
+        var toggleActive = function (activate) {
+            //return; // uncomment this line to see the de-coupled (broken) Bootstrap state
+
+            // de-activate any existing selection
+            $('#record-filters').find('.btn-primary').each(function (index, element) {
+                $(element).removeClass('active');
+            });
+            activate.addClass('active');
+        }
+
+        $.fn.dataTable.ext.search.push(
+            function (settings, data, dataIndex) {
+                var Completed = $('#gridDisplayCompleted')[0].checked;
+                var Progress = $('#gridDisplayProgress')[0].checked;
+                var Reviewed = $('#gridDisplayReviewed')[0].checked;
+                var all = $('#gridDisplayAll')[0].checked;
+                console.log("data[0]:" + data[0]);
+                console.log("data[1]:" + data[1]);
+                console.log("data[2]:" + data[2]);
+                console.log("Completed:" + Completed);
+                console.log("Progress:" + Progress);
+                console.log("Reviewed:" + Reviewed);
+                console.log("all:" + all);
+                var condition = String(data[1]); // check condition
+                if (all) {
+                    toggleActive($('#gridDisplayAllLabel'));
+                    console.log("all clicked");
+                    return true;
+                } else if (Completed) {
+                    toggleActive($('#gridDisplayCompleted'));
+                    console.log("Completed clicked");
+                    return ("Completed" == condition);
+                } else if (Progress) {
+                    toggleActive($('#gridDisplayProgress'));
+                    console.log("Progress clicked");
+                    return ("In Progress" == condition);
+                } else if (Reviewed) {
+                    toggleActive($('#gridDisplayReviewed'));
+                    console.log("Reviewed clicked");
+                    return ("Reviewed" == condition);
+                }
+                return false;
+            }
+        );
 
     });
+
 </script>
 </html>

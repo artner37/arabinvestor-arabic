@@ -151,11 +151,68 @@
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("scripts", required: false)
 </body>
-<script type="text/javascript">
+<script>
     $(document).ready(function () {
+        var grid = $('#myTable').DataTable({
+            "info": false,
+        });
 
-        demo.initChartist();
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
 
+        // Reload on record filter radio button clicks
+        $(document).on("click", "#record-filters", function () {
+            grid.draw();
+        });
+
+        var toggleActive = function (activate) {
+            //return; // uncomment this line to see the de-coupled (broken) Bootstrap state
+
+            // de-activate any existing selection
+            $('#record-filters').find('.btn-primary').each(function (index, element) {
+                $(element).removeClass('active');
+            });
+            activate.addClass('active');
+        }
+
+        $.fn.dataTable.ext.search.push(
+            function (settings, data, dataIndex) {
+                var Completed = $('#gridDisplayCompleted')[0].checked;
+                var Progress = $('#gridDisplayProgress')[0].checked;
+                var Reviewed = $('#gridDisplayReviewed')[0].checked;
+                var all = $('#gridDisplayAll')[0].checked;
+                console.log("data[0]:" + data[0]);
+                console.log("data[1]:" + data[1]);
+                console.log("data[2]:" + data[2]);
+                console.log("Completed:" + Completed);
+                console.log("Progress:" + Progress);
+                console.log("Reviewed:" + Reviewed);
+                console.log("all:" + all);
+                var condition = String(data[2]); // check condition
+                if (all) {
+                    toggleActive($('#gridDisplayAllLabel'));
+                    console.log("all clicked");
+                    return true;
+                } else if (Completed) {
+                    toggleActive($('#gridDisplayCompleted'));
+                    console.log("Completed clicked");
+                    return ("Completed" == condition);
+                } else if (Progress) {
+                    toggleActive($('#gridDisplayProgress'));
+                    console.log("Progress clicked");
+                    return ("In Progress" == condition);
+                } else if (Reviewed) {
+                    toggleActive($('#gridDisplayReviewed'));
+                    console.log("Reviewed clicked");
+                    return ("Reviewed" == condition);
+                }
+                return false;
+            }
+        );
     });
+
 </script>
+
 </html>
