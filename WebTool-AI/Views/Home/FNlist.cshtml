@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <div class="col-xs-12">
+                    <h2>Final Nominees (Top 3)</h2>
+                    <h5><b>AWARD CATEGORY</b> : <img src="~/Images/award-category/corporate-governance.png" width="15px" /><span>  CORPORATE GOVERNANCE</span></h5>
+                </div>
+            </div>
+            <div class="content">
+                <table class="display">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Company Name</th>
+                            <th>Score (%)</th>
+                            <th>View Report</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ABC Company</td>
+                            <td>ABC Company</td>
+                            <td>85</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company1</td>
+                            <td>ABC Company1</td>
+                            <td>73</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                        <tr>
+                            <td>ABC Company1</td>
+                            <td>ABC Company3</td>
+                            <td>52</td>
+                            <td><a href="@Url.Action("CompanyReport","Home")">View Report</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-reload"></i> Updated 3 minutes ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

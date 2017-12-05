@@ -444,3 +444,11 @@ $(".showchart").click(function () {
     $(".chartshow").removeClass("hidechart");
     $(".chartshow").addClass("displaychart");
 });
+$(function(){
+  $(".fancy-button").mousedown(function(){
+    $(this).bind('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
+        $(this).removeClass('active');
+    })
+     $(this).addClass("active");
+  });
+});

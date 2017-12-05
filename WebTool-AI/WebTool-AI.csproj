@@ -856,6 +856,9 @@
     <Content Include="Views\Home\Companylist.cshtml" />
     <Content Include="Views\Home\CompanyReport.cshtml" />
     <Content Include="Views\Home\EachAssessorReport.cshtml" />
+    <Content Include="Views\Home\FinalNominees.cshtml" />
+    <Content Include="Views\Home\FNCategories.cshtml" />
+    <Content Include="Views\Home\FNlist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
