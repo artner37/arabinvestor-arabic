@@ -94,32 +94,7 @@ $(function () {
 });
 
 $(function () {
-    var handle = $("#custom-handle");
-    $("#slider-impact1").slider({
-        orientation: "vertical",
-        min: 0,
-        max: 100,
-        isRTL: true,
-        create: function () {
-            handle.text($(this).slider("value"));
-        },
-        slide: function (event, ui) {
-            handle.text(ui.value);
-        }
-    });
-    var handle3 = $("#custom-handle2");
-    $("#slider-impact2").slider({
-        orientation: "vertical",
-        min: 0,
-        max: 100,
-        isRTL: true,
-        create: function () {
-            handle3.text($(this).slider("value"));
-        },
-        slide: function (event, ui) {
-            handle3.text(ui.value);
-        }
-    });
+  
     var handle2 = $(".ui-slider-handle");
     $(".slider-assessor").slider({
         max: 20,
@@ -153,6 +128,7 @@ function SetScore(select) {
 
     $(selectvalue).text(score);
 }
+AmCharts.rtl = true
 var chart = AmCharts.makeChart("chartdiv", {
     "type": "radar",
     "theme": "light",
@@ -452,3 +428,15 @@ $(function(){
      $(this).addClass("active");
   });
 });
+
+
+$(".rainbow-slider")
+    .slider({
+        max: 100,
+        min: 0,
+        step: 1
+    })
+    .slider("pips", {
+        step: 5,
+        rest: "label",
+    }).slider("float");

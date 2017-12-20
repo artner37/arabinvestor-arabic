@@ -18,25 +18,6 @@
     <a data-toggle="modal" data-target="#myModal4" class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-2x fa-save"></i></a>
 </div>
 <div class="row">
-    @*<div class="col-lg-4 col-sm-12">
-            <div id="sticky-anchor"></div>
-            <div class="card" id="sticky" style="position: fixed;">
-                <div class="content">
-                    <div class="row">
-                        <div class="qstatus">
-                            <h5>QUESTIONNAIRE STATUS</h5>
-                            <div id="progressbar"></div>
-                            <sub><em>Progress: <b>55%</b>, 7 out of 13 answered.</em></sub>
-                            <br />
-                            <h5>REVIEW STATUS</h5>
-                            <sub><em>Questionnaire not yet completed.</em></sub>
-                            <p>&nbsp;</p>
-                            <p><button>SAVE PROGRESS</button></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
     <div class="col-lg-12 col-sm-12">
 
         <div class="card">
@@ -60,7 +41,7 @@
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
                                                 </label>
-                                                <label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:<span class="score"></span></b></small></label>
+                                                <label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR01: Implementing Innovation Management Systems <a href="#" data-toggle="modal" data-target="#Criteria1"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -71,37 +52,38 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:<span class="score"></span></b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
+                                               
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc"><span>There are clear evidences on establishing will structured and effective processes,</span> <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc"><span>There are clear evidences on establishing will structured and effective processes,</span><span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -126,29 +108,32 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                    <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -172,7 +157,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR02: Offering an ecosystem and programs enabling employees to contribute to innovation and creativity related activities <a href="#" data-toggle="modal" data-target="#Criteria2"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -183,37 +168,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -238,30 +223,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="9" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -286,7 +274,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR03: Establishing partnerships with universities and research centres <a href="#" data-toggle="modal" data-target="#Criteria3"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -297,37 +285,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -352,31 +340,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp">
-                                                    <p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="9" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -401,7 +391,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR04: Showing an ability to identify opportunities for creativity and innovation <a href="#" data-toggle="modal" data-target="#Criteria4"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -412,37 +402,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -467,30 +457,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="9" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -515,7 +508,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR05: Realizing innovative product or service designs that exceeded customers’ expectations <a href="#" data-toggle="modal" data-target="#Criteria5"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -526,37 +519,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -581,30 +574,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="9" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -629,7 +625,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR06: Carrying new initiatives in the past 2 years that have resulted in tangible benefits for customers <a href="#" data-toggle="modal" data-target="#Criteria6"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -640,37 +636,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -695,30 +691,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="9" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row" style="padding:20px;">
@@ -743,7 +742,7 @@
                                                         <span class="checkbox-switch-off"></span>
                                                         <span class="checkbox-switch-handle"></span>
                                                     </span>
-                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small><small><b>SCORE:0</b></small></label>
+                                                </label><label style="float:right;padding-right:10px;"><small class="text-success"><i class="fa fa-check-circle"></i>COMPLETED&nbsp;&nbsp;</small><small class="text-danger"><i class="fa fa-exclamation-circle"></i>INCOMPLETE&nbsp;&nbsp;</small></label>
                                             </div>
                                             <div class="col-lg-12"><h5>INN_CR07: Demonstrating innovation in data utilization for gaining deeper understanding of customers’ needs. <a href="#" data-toggle="modal" data-target="#Criteria7"><i class="ti-info-alt"></i></a></h5></div>
                                         </div>
@@ -754,37 +753,37 @@
                                 <div class="panel-body">
                                     <small class="text-danger"><i class="fa fa-info-circle"></i>CAUTION : ONCE A LEVEL IS SELECTED YOU WILL NOT BE ABLE TO CHOOSE ANOTHER.</small>
                                     <div class="row">
-                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1</h4></div>
+                                        <div class="col-lg-12 criteria-content"><h4 for="01" class="tn-headline">PART 1 <small><b>SCORE:0</b></small></h4></div>
                                         <div class="col-lg-6 criteria-content">
                                             <ul class="list">
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="1" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="1"  id="radio1" />
                                                         Level #1
                                                     </label>
                                                 </li>
                                                 <div class="level-desc">There are no clear evidences on the existence of the practice within the organization.</div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="2" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="2"  id="radio1" />
                                                         Level #2
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes, <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
+                                                <div class="level-desc">There are clear evidences on establishing will structured and effective processes,<span > methods, and measures, that are suitable for the organization business nature, meets all stakeholders needs, and contribute to achieve business strategy.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="3" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="3"  id="radio1" />
                                                         Level #3
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences on implementing the organization processes <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
+                                                <div class="level-desc">There are clear evidences on implementing the organization processes<span > and methods systematically, comprehensively, and efficiently through optimum utilization of resources.</span></div>
                                                 <li>
                                                     <label>
-                                                        <input type="radio" class="option-input radio" value="4" onclick="checkValue(this);" id="radio1" />
+                                                        <input type="radio" class="option-input radio" value="4"  id="radio1" />
                                                         Level #4
                                                     </label>
                                                 </li>
-                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
+                                                <div class="level-desc">There are clear evidences that the organization use innovation and creativity<span > to improve their practices, based on continuous learning from their performance measures and best practices.</span></div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="textboxes" style="display:none;">
@@ -809,30 +808,33 @@
 
                                     <div class="row textboxes" style="display:none;">
 
-                                        <div class="col-lg-6 criteria-content">
-                                            <h4 for="01" class="tn-headline">PART 2</h4>
+                                        <div class="col-lg-12 criteria-content">
+                                            <h4 for="01" class="tn-headline">PART 2 <small><b>SCORE:<span class="score"></span></b></small></h4>
                                             <h6 style="color:#808080">Self assess your impact of the criteria between 1 to 100 from the slider down below.</h6>
-                                           
                                             <div class="row" style="margin-top:30px;">
-                                                <div class="col-lg-1">
-                                                    <div class="slider-impact" id="slider-impact1">
-                                                        <div id="custom-handle" class="ui-slider-handle"></div>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <div class="rainbow-slider"></div>
                                                 </div>
-                                                <div class="col-lg-11 indicatorp"><p class="result-desc">0 : There are no organizational performance results <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> ,or the results reported are poor.</span></p>
-                                                    <p class="result-desc">The organizational performance results are reported, responsive to the business requirements <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</span></p>
-                                                    <p class="result-desc">The organization key performance results shows sustainable achievements  <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text"> of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</span></p>
-                                                    <p class="result-desc">The organization key performance results are benchmarked and exceeded best <span class="readmore"><b>READ MORE...</b></span><span class="hidden-text">  entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</span></p>
-
+                                                <div class="impact-row" style="padding:5px;">
+                                                    <div class="col-lg-3 impact-bg">
+                                                        <h4>Score: 0</h4>There are no organizational performance results, or the results reported are poor.
+                                                    </div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 1 - 33</h4>The organizational performance results are reported, responsive to the business requirements, indicates the performance of organization practices and identify the success levels of achieving business strategy where early good performance levels are evident.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 34-66</h4>The organization key performance results shows sustainable achievements of challengeable targets with positive trends over time in all areas of importance to achieve organization strategy.</div>
+                                                    <div class="col-lg-3 impact-bg"><h4>Score: 67 - 100</h4>The organization key performance results benchmark exceeded best entities results in class (globally, regionally, and locally), and communicated among all stakeholders.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="margin-top:40px;">
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
-                                            <input type="file" id="myFile">
-                                            <input type="submit" value="Upload" />
-                                            <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
-                                            <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                        <div class="col-lg-12" style="margin-top:40px;">
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">Submit file supporting your answer (pdf|doc, 2 Mb) <a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-question-circle-o"></i></a></h6>
+                                                <input type="file" id="myFile">
+                                                <input type="submit" value="Upload" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 style="padding-top:30px;padding-bottom:5px;">What is the impact of implementing this criteria. Please explain with no more than 700 awards. And support your answer with an attached file.</h6>
+                                                <textarea rows="7" placeholder="Enter your explanation..."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

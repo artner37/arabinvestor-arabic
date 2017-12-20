@@ -28,6 +28,7 @@ namespace WebTool_AI
                       "~/Scripts/bootstrap-notify.js",
                       "~/Scripts/moment.js",
                       "~/Scripts/bootstrap-datetimepicker.js",
+                      "~/Scripts/jquery-ui-slider-pips.js",
                       "~/amcharts/amcharts.js", 
                       "~/amcharts/radar.js", 
                       "~/amcharts/serial.js",
@@ -42,12 +43,21 @@ namespace WebTool_AI
                       "~/Scripts/jquery-ui-1.12.1.js",
                       "~/Scripts/jquery.ui.slider-rtl.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/rtljs").Include(
+                      "~/Scripts/custom-rtl.js"));
+
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
               "~/Content/themes/base/jquery-ui.css", "~/Content/jquery.ui.slider-rtl.css"));
 
+            bundles.Add(new StyleBundle("~/Content/bootstrap/rtl").Include(
+              "~/Content/css/bootstrap-rtl.css", "~/Content/css/custom-rtl.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap/loginrtl").Include(
+              "~/Content/css/bootstrap-rtl.css", "~/Content/css/login-rtl.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/paper-dashboard.css", "~/Content/bootstrap-datetimepicker.css", "~/Content/demo.css", "~/Content/animate.css", "~/Content/themify-icons.css", "~/Content/font-awesome.css"));
+                      "~/Content/paper-dashboard.css", "~/Content/bootstrap-datetimepicker.css", "~/Content/demo.css", "~/Content/animate.css", "~/Content/themify-icons.css", "~/Content/font-awesome.css", "~/Content/jquery-ui-slider-pips.css"));
 
             bundles.Add(new StyleBundle("~/Content/logincss").Include(
                       "~/Content/bootstrap.css",

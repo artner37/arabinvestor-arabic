@@ -515,7 +515,7 @@ hr {
 
 .main-panel {
     background-color: #f4f3ef;
-    background-image: url(../Images/bglogin.jpg);
+    background-image: url(../../Images/bglogin.jpg);
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -4452,4 +4452,10 @@ textarea {
     background: #3be240;
     border-color: #3be240;
     color: #403D39;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
 }
