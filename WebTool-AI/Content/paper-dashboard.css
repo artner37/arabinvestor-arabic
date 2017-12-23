@@ -3809,7 +3809,7 @@ textarea.form-control {
 }
 
 ::-webkit-scrollbar {
-    width: 0.3em;
+    width: 0.7em;
 }
 
 ::-webkit-scrollbar-track {
@@ -3817,8 +3817,8 @@ textarea.form-control {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #;
-    outline: 1px solid slategrey;
+    background-color: #b98b1a;
+    outline: 1px solid #b98b1a;
 }
 
 #sliders {

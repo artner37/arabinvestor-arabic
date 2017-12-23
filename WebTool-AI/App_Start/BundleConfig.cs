@@ -40,8 +40,7 @@ namespace WebTool_AI
                       "~/Scripts/Datatables/dataTables.bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                      "~/Scripts/jquery-ui-1.12.1.js",
-                      "~/Scripts/jquery.ui.slider-rtl.js"));
+                      "~/Scripts/jquery-ui-1.12.1.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/rtljs").Include(
                       "~/Scripts/custom-rtl.js"));
@@ -50,7 +49,7 @@ namespace WebTool_AI
               "~/Content/themes/base/jquery-ui.css", "~/Content/jquery.ui.slider-rtl.css"));
 
             bundles.Add(new StyleBundle("~/Content/bootstrap/rtl").Include(
-              "~/Content/css/bootstrap-rtl.css", "~/Content/css/custom-rtl.css"));
+              "~/Content/css/bootstrap-rtl.css", "~/Content/css/custom-rtl.css", "~/Content/css/rtl.css"));
 
             bundles.Add(new StyleBundle("~/Content/bootstrap/loginrtl").Include(
               "~/Content/css/bootstrap-rtl.css", "~/Content/css/login-rtl.css"));
