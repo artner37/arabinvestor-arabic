@@ -182,6 +182,7 @@ body {
     color: #f5f5f5;
     font-size: 14px;
     font-family: 'Muli', Arial, sans-serif;
+    margin:0;
 }
 
     body .wrapper {
@@ -285,7 +286,6 @@ hr {
         max-height: none;
         min-height: 100%;
         overflow: hidden;
-        width: 260px;
         z-index: 4;
     }
 
