@@ -37,7 +37,7 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Muli', "Helvetica", Arial, sans-serif;
+    font-family: 'Amiri', "Helvetica", Arial, sans-serif;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -181,7 +181,7 @@ strong {
 body {
     color: #f5f5f5;
     font-size: 14px;
-    font-family: 'Muli', Arial, sans-serif;
+    font-family: 'Amiri', Arial, sans-serif;
 }
 
     body .wrapper {
@@ -2061,7 +2061,7 @@ textarea.form-control {
         margin-bottom: 5px;
         text-transform: uppercase;
         font-weight: 900;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
 
     .card .title {
@@ -3799,7 +3799,7 @@ textarea.form-control {
 .main-heading {
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     padding-top: 15px;
 }
 
@@ -4288,14 +4288,12 @@ textarea {
     margin-top: 13px;
     color: #fff;
     background: #b98b1a;
-    font-style: italic;
     font-size: 12px;
 }
 
 .result-desc {
     border: 1px solid #b98b1a;
     color: #b98b1a;
-    font-style: italic;
     font-size: 12px;
 }
 
